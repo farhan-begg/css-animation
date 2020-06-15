@@ -1,0 +1,338 @@
+*, h1 {
+    margin: auto;
+    font-size: 10pt
+
+}
+
+.container {
+    display: grid;
+    padding: 5em;
+    grid-template-columns: auto auto auto;
+
+}
+
+.blue-button {
+    height: 8px;
+    width: 80px;
+    padding: 1em;
+    background-color: #008fc1;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    transition: 1000ms;
+}
+
+.blue-button:hover{
+    background-color: transparent;
+    border: 3px solid #008fc1;
+    color: #008fc1;
+}
+
+
+.line-button {
+    height: 5px;
+    width: 80px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: 1000ms;
+    text-align: center;
+    padding: 2em;
+}
+
+
+.line-button:hover {
+    border-top: 3px solid #008fc1;
+    border-bottom: 3px solid #008fc1;
+    letter-spacing: 5px;
+
+}
+
+.white-button{
+    height: 8px;
+    width: 80px;
+    padding: 1em;
+    background-color: transparent;
+    border: 3px solid #008fc1;
+    color: #008fc1;
+    border-radius: 25px;
+    text-align: center;
+    transition: 2000ms;
+
+}
+
+.white-button:hover {
+    background-color: #008fc1;
+    color: white;
+}
+
+.x {
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    transition: 200ms;
+  }
+
+  .x>div {
+    width: 60px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+  }
+
+  .x>div:nth-child(1) {
+    transform: translate(20px, 35px) rotate(0);
+    transition: 200ms;
+  }
+
+  .x>div:nth-child(2) {
+    transform: translate(20px, 55px) rotate(0);
+    transition: 200ms;
+  }
+
+  .x:hover {
+    /* Change the background color to black */
+    background-color: black;
+  }
+
+  .x:hover>div {
+    background-color: white;
+  }
+
+  .x:hover>div:nth-child(1) {
+    transform: translate(20px, 45px) rotate(45deg);
+  }
+
+  .x:hover>div:nth-child(2) {
+    transform: translate(20px, 45px) rotate(-45deg);
+  }
+
+  .x3 {
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    transition: 200ms;
+  }
+
+  .x3>div {
+    width: 60px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+  }
+
+  .x3>div:nth-child(1) {
+    transform: translate(20px, 25px) rotate(0);
+    transition: 200ms;
+  }
+
+  .x3>div:nth-child(2) {
+    opacity: 1;
+    transform: scale(1, 1) translate(20px, 45px) rotate(0);
+    transition: 200ms;
+  }
+
+  .x3>div:nth-child(3) {
+    transform: translate(20px, 65px) rotate(0);
+    transition: 200ms;
+  }
+
+  .x3:hover {
+    background-color: black;
+  }
+
+  .x3:hover>div {
+    background-color: white;
+  }
+  /* Animate the three bars */
+
+  .x3:hover>div:nth-child(1) {
+    transform: translate(20px, 45px) rotate(45deg);
+  }
+  /* Change the scale x to 0 */
+
+  .x3:hover>div:nth-child(2) {
+    opacity: 0;
+    transform: scale(0, 1) translate(20px, 45px) rotate(0);
+  }
+
+  .x3:hover>div:nth-child(3) {
+    transform: translate(20px, 45px) rotate(-45deg);
+  }
+
+
+  .arw {
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    transition: 200ms;
+  }
+
+  .arw>div {
+    width: 60px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+  }
+
+  .arw>div:nth-child(1) {
+    transform: translate(20px, 25px) rotate(0);
+    transition: 200ms;
+  }
+
+  .arw>div:nth-child(2) {
+    opacity: 1;
+    transform: scale(1, 1) translate(20px, 45px) rotate(0);
+    transition: 200ms;
+  }
+
+  .arw>div:nth-child(3) {
+    transform: translate(20px, 65px) rotate(0);
+    transition: 200ms;
+  }
+
+  .arw:hover {
+    background-color: black;
+  }
+
+  .arw:hover>div {
+    background-color: white;
+  }
+
+  .arw:hover>div:nth-child(1) {
+    width: 53px;
+    transform: translate(10px, 30px) rotate(-45deg);
+  }
+
+  .arw:hover>div:nth-child(2) {
+    transform: translate(20px, 45px) rotate(0);
+  }
+
+  .arw:hover>div:nth-child(3) {
+    width: 53px;
+    transform: translate(10px, 60px) rotate(45deg);
+  }
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+}
+
+.box > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.75) rotate(0deg);
+    transition: 600ms;
+    transition-timing-function: linear;
+}
+
+.box:hover > img {
+    transform: translate(-50%, -50%) scale(1.0) rotate(-14deg);
+}
+
+.text-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.text-box > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.75) rotate(0deg);
+    transition: 500ms;
+    transition-timing-function: linear;
+}
+
+.text-box > h4 {
+    position: absolute;
+    background-color: gray;
+    right: -220px;
+    bottom: 0;
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 99%, 5% 50%);
+}
+
+.text-box:hover > h4 {
+    right: -20px;
+    transition: 500ms;
+    transition-timing-function: cubic-bezier(0.800, 0.200, 0.200, 0.900);
+}
+.text-box:hover > img {
+    transform: translate(-50%, -50%) scale(1.0) rotate(-14deg);
+}
+
+
+.price-bubble {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.price{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color:rgb(255, 0, 0);
+    transform: translate3d(-40px, -40px, 0);
+    transition: 700ms;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    position: absolute;
+}
+
+.price > h4 {
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+
+.price-bubble:hover > .price {
+    transition: 700ms;
+    transform: translate3d(0px, 0px, 0);
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+
+}
+.banner {
+    position: absolute;
+    background-color: gray;
+    color: #fff;
+    right: -200px;
+    bottom: 0;
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 99%, 5% 50%);
+    transition: 700ms;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.price-bubble:hover > .banner {
+    right: -20px;
+    transition: 700ms;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.price-bubble > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.75) rotate(0deg);
+    transition: 800ms;
+    transition-timing-function: linear;
+}
+
+.price-bubble:hover > img {
+    transform: translate(-50%, -50%) scale(1.0) rotate(-14deg);
+}
